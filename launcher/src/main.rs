@@ -1213,8 +1213,7 @@ fn main() -> Result<(), LauncherError> {
         Ok(_) => {}
         Err(err) => {
             tracing::warn!(
-                "Unable to refresh ldconfig cache. Skipping (useless in most cases). Details {:?}",
-                err
+                "Unable to refresh ldconfig cache. Skipping (useless in most cases)."
             )
         }
     }
